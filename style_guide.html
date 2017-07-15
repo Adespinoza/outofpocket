@@ -2,12 +2,98 @@
 <html>
 <head>
   <title>Style Guide</title>
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Poppins|Noto+Sans|Poiret+One|Comfortaa|Josefin+Slab" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Noto+Sans:400,700" rel="stylesheet">
 </head>
 <style>
-
+  html, body {
+    font-family: 'Helvetica Neue', serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 5px;
+    font-family: 'Comfortaa', serif;
+    /*font-family: 'Poiret One', serif;*/
+    /*font-family: 'Noto Sans', serif; /* Body Text*/
+    /*font-family: 'Poppins', serif; Body Text */
+  }
+  .container {
+    display: flex;
+  }
+  .column {
+    flex-direction: column;
+  }
+  .row {
+    flex-direction: row;
+  }
+  .center {
+    justify-content: center;
+  }
+  .light {
+    font-weight: 300;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .example {
+    padding-left: 10px;
+    background-color: rgb(255, 251, 241);
+    width: 500px;
+    border: none;
+  }
+  .container--fluid {
+    display: flex;
+    width: 100%;
+  }
+  .item {
+    margin: 20px;
+  }
+  td {
+    width: 150px;
+    height: 100px;
+    background-color: green;
+    padding-left: 10px;
+    color: white;
+  }
 </style>
 <body>
-  <h1>Here is some testing text</h1>
+  <div class="container--fluid center">
+    <h1>Out of Pocket Style Guide</h1>
+  </div>
+  <div class="container row">
+    <div class="item">
+      <h1>Typography</h1>
+      <div class="container column example">
+        <h1>Here is some testing text</h1>
+        <h1 class="light italic">Here is some testing text</h1>
+        <h2>Here is some testing text</h2>
+        <h2 class="light italic">Here is some testing text</h2>
+        <h3>Here is some testing text</h3>
+        <h4>Here is some testing text</h4>
+        <h4 class="light">Here is some testing text</h4>
+        <h5>Here is some testing text</h5>
+        <h6>Here is some testing text</h6>
+      </div>
+    </div>
+    <div class="item">
+      <h1>Core Interface Colors</h1>
+      <table>
+        <tr>
+          <td>#000</td>
+          <td>#000</td>
+          <td>#000</td>
+        </tr>
+        <tr>
+          <td>#000</td>
+          <td>#000</td>
+          <td>#000</td>
+        </tr>
+        <tr>
+          <td>#000</td>
+          <td>#000</td>
+          <td>#000</td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </body>
 </html>
