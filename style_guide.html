@@ -2,12 +2,225 @@
 <html>
 <head>
   <title>Style Guide</title>
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300|Noto+Sans|Poiret+One|Comfortaa|Josefin+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Noto+Sans:400,700" rel="stylesheet">
 </head>
 <style>
-
+  html, body {
+    font-family: 'Noto Sans', 'Helvetica Neue', serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 5px;
+    font-family: 'Comfortaa', serif;
+    /*font-family: 'Poiret One', serif;*/
+    /*font-family: 'Noto Sans', serif; /* Body Text*/
+    /*font-family: 'Poppins', serif; Body Text */
+  }
+  .container {
+    display: flex;
+  }
+  .column {
+    flex-direction: column;
+  }
+  .row {
+    flex-direction: row;
+  }
+  .center {
+    justify-content: center;
+  }
+  .light {
+    font-weight: 300;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .red {
+    background-color: #e2411e;
+  }
+  .blue {
+    background-color: #3a9fc8;
+  }
+  .dark-gray {
+    background-color: #666;
+  }
+  .gray {
+    background-color: #b3b3b3;
+  }
+  .light-gray {
+    background-color: #ccc;
+  }
+  .cream-white {
+    background-color: #f2f7fa;
+  }
+  .yellow {
+    background-color: #ffd920;
+  }
+  .light-blue {
+    background-color: #40a0c6;
+  }
+  .light-red {
+    background-color: #d16563;
+  }
+  .steel-blue {
+    background-color: #acc5cc;
+  }
+  .example {
+    padding-left: 10px;
+    background-color: rgb(255, 251, 241);
+    width: 500px;
+    border: none;
+  }
+  .container--fluid {
+    display: flex;
+    width: 100%;
+  }
+  .item {
+    width: 550px;
+    margin: 20px;
+  }
+  .primary {
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .primary:hover {
+    transition: all 0.25s ease-out;
+    background-color: #f55836;
+  }
+  .button-large {
+    font-family: 'Poppins', serif;
+    font-size: 2em;
+  }
+  .btn--primary {
+    font-family: 'Comfortaa', serif;
+    font-size: 1.50em;
+    color: #ffffff;
+    background-color: #E2411E;
+    border: none;
+    cursor: pointer;
+    padding: 0px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    width: 330px;
+    height: 55px;
+  }
+  .button-small {
+    font-family: 'Poppins', serif;
+    font-size: 1.1em;
+    width: 200px;
+    height: 40px;
+  }
+  .btn--primary-large {
+    font-family: 'Comfortaa', serif;
+    font-size: 1.75em;
+    color: #ffffff;
+    background-color: #E2411E;
+    padding: 0px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    width: 350px;
+    height: 50px;
+  }
+  .btn--secondary {
+    font-family: 'Comfortaa', serif;
+    font-size: 1.50em;
+    color: #40a0c6;
+    border-color: #40a0c6;
+    border-style: solid;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 0px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    width: 330px;
+    height: 55px;
+  }
+  .btn--secondary-large {
+    font-family: 'Comfortaa', serif;
+    font-size: 1.75em;
+    color: #40a0c6;
+    border-color: #40a0c6;
+    border-style: solid;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 0px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    width: 350px;
+    height: 50px;
+  }
+  td {
+    width: 150px;
+    height: 100px;
+    background-color: green;
+    padding-left: 10px;
+    color: rgb(46, 46, 46);
+  }
 </style>
 <body>
-  <h1>Here is some testing text</h1>
+  <div class="container--fluid center">
+    <h1>Out of Pocket Style Guide</h1>
+  </div>
+  <div class="container row">
+    <div class="item">
+      <h1>Typography</h1>
+      <p>
+        There are two main fonts that are used for this project. Comfortaa and Noto Sans which are from <a href="https://fonts.google.com/">Google Fonts</a>
+      </p>
+      <div class="container column example">
+        <h1>Here is some testing text</h1>
+        <h1 class="light italic">Here is some testing text</h1>
+        <h2>Here is some testing text</h2>
+        <h2 class="light italic">Here is some testing text</h2>
+        <h3>Here is some testing text</h3>
+        <h4>Here is some testing text</h4>
+        <h4 class="light">Here is some testing text</h4>
+        <h5>Here is some testing text</h5>
+        <h6>Here is some testing text</h6>
+      </div>
+    </div>
+    <div class="item">
+      <h1>Core Interface Colors</h1>
+      <p>
+        These colors are the main tones that are used throughout the app. In future versions, we will incorporate different opacities with Less/SASS support.
+      </p>
+      <table>
+        <tr>
+          <td class="red">Red<br />#e2411e</td>
+          <td class="blue">Blue<br />#3a9fc8</td>
+          <td class="dark-gray">Dark Gray<br />#666666</td>
+        </tr>
+        <tr>
+          <td class="gray">Gray<br />#b3b3b3</td>
+          <td class="light-gray">Light Gray<br />#cccccc</td>
+          <td class="cream-white">Cream White<br />#f2f7fa</td>
+        </tr>
+        <tr>
+          <td class="yellow">Yellow<br />#ffd920</td>
+          <td class="light-blue">Light Blue<br />#40a0c6</td>
+          <td class="light-red">Light Red<br />#d16563</td>
+        </tr>
+        <tr>
+          <td class="steel-blue">Steel Blue<br />#acc5cc</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="item">
+    <h1>Buttons</h1>
+    <p>
+      There are different types of buttons that are used throughout the app. The are primary and secondary buttons.
+    </p>
+    <div class="container column">
+      <h2>Large Button</h2>
+        <button class="primary btn--primary-large light">Submit Text</button><br/>
+      <h2>Large Button Light</h2>
+        <button class="btn--secondary-large light">Submit Text</button><br/>
+      <h2>Small Button</h2>
+        <button class="primary btn--primary light">Submit Text</button>
+      <h2>Small Button Light</h2>
+        <button class="btn--secondary light">Submit Text</button>
+    </div>
+  </div>
 </body>
 </html>
