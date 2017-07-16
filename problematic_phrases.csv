@@ -1,27 +1,22 @@
-Alien,Where are you from or where were you born?
-Alien,You speak English very well.
-Alien,What are you? You're so interesting looking!
-Intelligence,You are credit to your race.
-Intelligence,Wow! How did you become so good in math?
-Intelligence,"You must be good in math, can you help me with this problem?"
-Intelligence,I would have never guessed that you were a scientist.
-Color Blindness,"When I look at you, I don't see color."
-Color Blindness,"There is only one race, the human race."
-Color Blindness,America is a melting pot.
-Color Blindness,I don't believe in race.
-Denial,I'm no racist. I have several Black friends.
-Denial,"As a woman, I know what you go through as a racial minority."
-Denial,Are you sure you were being following in the store? I can't believe it.
-Meritocracy,I believe the most qualified person should get the job.
-Meritocracy,"Of course he'll get tenure, even though he hasn't published much - he's black!"
-Meritocracy,Men and women have equal opportunities for achievement.
-Meritocracy,Gender plays no part in who we hire.
-Meritocracy,America is the land of opportunity.
-Meritocracy,"Everyone can succeed in this society, if they work hard enough."
-Meritocracy,Affirmative action is racist.
-Pathologizing,Why are you so quiet? We want to know what you think. Be more verbal. Speak up.
-Pathologizing,Why do you have to be so loud/animated? Just calm down.
-Pathologizing,Why are you always angry?
-Second-Class Citizen,You people...
-Prejudice,What do you need to work on this for anyway?
-Prejudice,"You're a girl, you don't have to be good at math."
+xeno,Where are you from or where were you born?
+xeno,You speak English very well.
+xeno,What are you? 
+xeno,You're so interesting looking!
+race,You are credit to your race.
+race,you're Asian is that why you're good in math?
+race,"You must be good in math since you're Chinese, can you help me with this problem?"
+sexi,I would have never guessed that a woman could be a scientist.
+race,"When I look at you, I don't see color."
+race,"There is only one race, the human race."
+race,I don't believe in race.
+race,I'm no racist. I have several Black friends.
+race,"As a woman, I know what you go through as a racial minority."
+race,Are you sure you were being following in the store? I can't believe it.
+race,"Of course he'll get tenure, even though he hasn't published much - he's black!"
+sexi,Men and women have equal opportunities for achievement.
+sexi,Gender plays no part in who we hire.
+race,Affirmative action is racist.
+sexi,Why do you have to be so loud/animated? Just calm down.
+sexi,Why are you always angry?
+xeno,You people...
+sexi,"You're a girl, you don't have to be good at math."

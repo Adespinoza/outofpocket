@@ -1,3 +1,4 @@
 *.bin
 *.train
 *.test
+__pycache__/
