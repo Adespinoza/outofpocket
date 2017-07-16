@@ -17,6 +17,10 @@ class Results extends React.Component {
   }
 
   render() {
+    console.log('1');
+    console.log(this.props.response);
+    console.log('2');
+    console.log(this.props.prompt);
     return (
       <div>
         <div className="container--fluid header--small">
@@ -46,7 +50,7 @@ class Results extends React.Component {
           <div className="container--right column">
             <div className="section">
               <h2>Phrase Breakdown</h2>
-              <h3>{value}</h3>
+              <h3>{this.props.prompt}</h3>
             </div>
             <div className="section">
               <h2>Suggestions</h2>

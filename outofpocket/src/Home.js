@@ -10,7 +10,6 @@ import './Home.css';
 import Results from './components/Results';
 let results = false;
 let placeholder = '';
-let response = '';
 const randomPhrases = [
   "I'm not racist, but I think affirmative action is reverse racism.",
   "You're so beautiful for a black woman.",
@@ -24,6 +23,7 @@ class Home extends Component {
     super(props);
     this.state = {
       value: '',
+      response: '',
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -38,14 +38,14 @@ class Home extends Component {
     // Jumps to the results page
     var myHeaders = new Headers();
     myHeaders.set('Content-Type', 'application/json');
-    fetch('http://127.0.0.1:5000', {
+    fetch('http://localhost:5000/', {
       method: 'POST',
       headers: myHeaders,
-      body: JSON.stringify({ "text": "You don't belong here" })
+      body: JSON.stringify({ "text": this.state.value })
     }).then((res) => {
       console.log('waddup');
-      console.log(res);
-      response = res;
+      // console.log(res.json());
+      this.setState({ response: res.json() })
     });
 
     console.log({ prompt: this.state.value });
@@ -59,7 +59,6 @@ class Home extends Component {
   }
   render() {
     this.randomPlaceholder();
-    console.log(window.location.pathname);
     if (window.location.pathname === '/results') {
       results = true;
     }
@@ -86,7 +85,7 @@ class Home extends Component {
         /*<Router>
           <Route path="/results" component={Results}/>
         </Router>*/
-        <Results prompt={this.state.value}/>
+        <Results prompt={this.state.value} response={this.state.response}/>
       )
     }
   }
