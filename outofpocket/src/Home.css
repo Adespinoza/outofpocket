@@ -88,6 +88,7 @@ button {
   cursor: pointer;
   color: #ffffff;
   background-color: #E2411E;
+  margin: 15px 0px;
 }
 .primary:hover {
   transition: all 0.25s ease-out;
@@ -131,4 +132,5 @@ button {
 }
 .phrase-header {
   text-align: center;
+  margin: 20px 0px;
 }
