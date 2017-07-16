@@ -90,8 +90,14 @@
   .button-large {
     font-family: 'Poppins', serif;
     font-size: 2em;
+  }
+  .btn--primary {
+    font-family: 'Comfortaa', serif;
+    font-size: 1.50em;
     color: #ffffff;
     background-color: #E2411E;
+    border: none;
+    cursor: pointer;
     padding: 0px 30px;
     display: inline-block;
     border-radius: 50px;
@@ -101,13 +107,47 @@
   .button-small {
     font-family: 'Poppins', serif;
     font-size: 1.1em;
+    width: 200px;
+    height: 40px;
+  }
+  .btn--primary-large {
+    font-family: 'Comfortaa', serif;
+    font-size: 1.75em;
     color: #ffffff;
     background-color: #E2411E;
     padding: 0px 30px;
     display: inline-block;
     border-radius: 50px;
-    width: 200px;
-    height: 40px;
+    width: 350px;
+    height: 50px;
+  }
+  .btn--secondary {
+    font-family: 'Comfortaa', serif;
+    font-size: 1.50em;
+    color: #40a0c6;
+    border-color: #40a0c6;
+    border-style: solid;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 0px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    width: 330px;
+    height: 55px;
+  }
+  .btn--secondary-large {
+    font-family: 'Comfortaa', serif;
+    font-size: 1.75em;
+    color: #40a0c6;
+    border-color: #40a0c6;
+    border-style: solid;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 0px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    width: 350px;
+    height: 50px;
   }
   td {
     width: 150px;
@@ -173,9 +213,13 @@
     </p>
     <div class="container column">
       <h2>Large Button</h2>
-      <button class="primary button-large light">Submit Text</button><br/>
+        <button class="primary btn--primary-large light">Submit Text</button><br/>
+      <h2>Large Button Light</h2>
+        <button class="btn--secondary-large light">Submit Text</button><br/>
       <h2>Small Button</h2>
-      <button class="primary button-small">Submit Text</button>
+        <button class="primary btn--primary light">Submit Text</button>
+      <h2>Small Button Light</h2>
+        <button class="btn--secondary light">Submit Text</button>
     </div>
   </div>
 </body>
