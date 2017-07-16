@@ -3,7 +3,7 @@
 #
 all:
 	python preprocess.py
-	./fasttext supervised -input yikes.train -output out_of_pocket.bin 
+	./fasttext supervised -input yikes.train -output out_of_pocket
 
 
 play:
