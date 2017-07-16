@@ -8,6 +8,8 @@
 # Enter some phrase and our model will try to predict how
 # to label it.
 #
+# `make server` runs the server
+#
 
 all:
 	python preprocess.py
@@ -16,6 +18,9 @@ all:
 
 play:
 	./fasttext predict-prob out_of_pocket.bin -
+
+server:
+	python3 server.py
 
 clean:
 	rm -rf *.bin *.train *.test
