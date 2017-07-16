@@ -45,7 +45,9 @@ class Home extends Component {
     }).then((res) => {
       console.log('waddup');
       // console.log(res.json());
-      this.setState({ response: res.json() })
+      res.json().then((data) => {
+        this.setState({ response: data })
+      });
     });
 
     console.log({ prompt: this.state.value });
