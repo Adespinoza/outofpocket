@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Noto+Sans:400,700');
+html, body {
+  font-family: 'Noto Sans', 'Helvetica Neue', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 5px;
+  font-family: 'Comfortaa', serif;
+  /*font-family: 'Poiret One', serif;*/
+  /*font-family: 'Noto Sans', serif; /* Body Text*/
+  /*font-family: 'Poppins', serif; Body Text */
+}
+.container {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.center {
+  justify-content: center;
+}
+.light {
+  font-weight: 300;
+}
+.italic {
+  font-style: italic;
+}
+.red {
+  background-color: #e2411e;
+}
+.blue {
+  background-color: #3a9fc8;
+}
+.dark-gray {
+  background-color: #666;
+}
+.gray {
+  background-color: #b3b3b3;
+}
+.light-gray {
+  background-color: #ccc;
+}
+.cream-white {
+  background-color: #f2f7fa;
+}
+.yellow {
+  background-color: #ffd920;
+}
+.light-blue {
+  background-color: #40a0c6;
+}
+.light-red {
+  background-color: #d16563;
+}
+.steel-blue {
+  background-color: #acc5cc;
+}
+.example {
+  padding-left: 10px;
+  background-color: rgb(255, 251, 241);
+  width: 500px;
+  border: none;
+}
+.container--fluid {
+  display: flex;
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  height: 400px;
+}
+.item {
+  width: 550px;
+  margin: 20px;
+}
+button {
+  font-family: 'Comfortaa', serif;
+  outline: none;
+}
+.primary {
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #E2411E;
+}
+.primary:hover {
+  transition: all 0.25s ease-out;
+  background-color: #f55836;
+}
+.secondary {
+  border: 1px solid #40a0c6;
+  color: #40a0c6;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.btn-large {
+  font-size: 1.75em;
+  padding: 0px 30px;
+  display: inline-block;
+  border-radius: 50px;
+  width: 330px;
+  height: 55px;
+}
+.btn-small {
+  font-size: 1.1em;
+  width: 200px;
+  height: 40px;
+}
+.phrase-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.phrase-area {
+  width: 50%;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 22px;
+  font-family: 'Noto Sans', serif;
+  resize: none;
+  padding-left: 10px;
+  outline: none;
+}
+.phrase-header {
+  text-align: center;
+}
