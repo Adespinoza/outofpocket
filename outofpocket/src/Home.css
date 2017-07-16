@@ -5,6 +5,7 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   margin: 5px;
   font-family: 'Comfortaa', serif;
+  color: rgb(57, 57, 57);
   /*font-family: 'Poiret One', serif;*/
   /*font-family: 'Noto Sans', serif; /* Body Text*/
   /*font-family: 'Poppins', serif; Body Text */
@@ -72,8 +73,10 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  color: white;
   height: 400px;
+}
+.header > h1 {
+  color: white;
 }
 .item {
   width: 550px;
@@ -83,12 +86,21 @@ button {
   font-family: 'Comfortaa', serif;
   outline: none;
 }
+.submit {
+  text-decoration: none;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
 .primary {
+  font-family: 'Comfortaa', serif;
   border: none;
-  cursor: pointer;
+  font-decoration: none;
   color: #ffffff;
   background-color: #E2411E;
   margin: 15px 0px;
+  text-align: center;
+  line-height: 1.1;
 }
 .primary:hover {
   transition: all 0.25s ease-out;
@@ -110,6 +122,9 @@ button {
 }
 .btn-small {
   font-size: 1.1em;
+  padding: 0px 30px;
+  display: inline-block;
+  border-radius: 40px;
   width: 200px;
   height: 40px;
 }
@@ -133,4 +148,46 @@ button {
 .phrase-header {
   text-align: center;
   margin: 20px 0px;
+}
+
+/******* Results Page ********/
+.container--left {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: auto;
+}
+.container--right {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+}
+.header--small {
+  align-items: center;
+  height: 70px;
+  background-color: #3a9fc8;
+}
+.header--small > h1 {
+  color: white;
+}
+.section {
+  height: auto;
+  margin: 20px 0;
+}
+.meter {
+  width: 230px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  background-color: white;
+  margin: 5px;
+}
+.bar {
+  background: black;
+  height: 2px;
+  width: 0%;
+}
+.suggestions > li {
+  margin: 5px 0;
 }

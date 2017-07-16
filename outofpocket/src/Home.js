@@ -5,6 +5,7 @@ import {
   Link
 } from 'react-router-dom'
 import './Home.css';
+import Results from './components/Results';
 let placeholder = '';
 const randomPhrases = [
   "I'm not racist, but I think affirmative action is reverse racism.",
@@ -31,6 +32,7 @@ class Home extends Component {
   handleSubmit(event) {
     // Sends the phrase to the backend
     // Jumps to the results page
+    console.log({ prompt: this.state.value });
     console.log(this.state.value);
   }
 
@@ -50,8 +52,9 @@ class Home extends Component {
           <h1 className="phrase-header">Enter Sentence or Phrase</h1>
           <textarea rows="10" cols="50" className="phrase-area" placeholder={placeholder} value={this.state.value} onChange={this.handleChange}>
           </textarea>
-          <button type="submit" className="primary btn-large" onClick={this.handleSubmit}>Submit</button>
+          <Link to="/results" className="primary btn-large submit" onClick={this.handleSubmit}>Submit</Link>
         </div>
+        <Route path="/results" component={Results}/>
       </div>
       </Router>
     );
