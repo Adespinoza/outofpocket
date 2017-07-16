@@ -8,3 +8,6 @@ all:
 
 play:
 	./fasttext predict out_of_pocket.bin -
+
+clean:
+	rm -rf *.bin *.train *.test
