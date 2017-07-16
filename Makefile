@@ -13,11 +13,11 @@
 
 all:
 	python preprocess.py
-	./fasttext supervised -input yikes.train -output out_of_pocket
+	./fasttext supervised -lr 0.001 -input yikes.train -output out_of_pocket
 
 
 play:
-	./fasttext predict-prob out_of_pocket.bin -
+	./fasttext predict-prob out_of_pocket.bin - 12
 
 server:
 	python3 server.py
