@@ -47,6 +47,7 @@ class Home extends Component {
       console.log(res);
       response = res;
     });
+
     console.log({ prompt: this.state.value });
     console.log(this.state.value);
     results = !results;
@@ -82,9 +83,10 @@ class Home extends Component {
       );
     } else {
       return (
-        <Router>
+        /*<Router>
           <Route path="/results" component={Results}/>
-        </Router>
+        </Router>*/
+        <Results prompt={this.state.value}/>
       )
     }
   }
