@@ -44,7 +44,7 @@ class Home extends Component {
       body: JSON.stringify({ "text": "You don't belong here" })
     }).then((res) => {
       console.log('waddup');
-      console.log(res);
+      console.log(res.json());
       response = res;
     });
 
