@@ -41,7 +41,7 @@ var chart = AmCharts.makeChart("chartdiv", {
 setInterval(setValue, 2000);
 
 function setValue() {
-  var value = Math.round(Math.random() * 100);
+  var value = 50;
   chart.arrows[0].setValue(value);
   chart.axes[0].setTopText(value + " %");
   // adjust darker band to new value
