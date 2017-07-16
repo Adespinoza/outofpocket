@@ -1,2 +1,3 @@
-out_of_pocket.bin
-
+*.bin
+*.train
+*.test
