@@ -10,6 +10,7 @@ def process():
   resp = {}
   if request.method == 'POST':
     text = request.data.get('text')
+    resp['text'] = text
     print(text)
     temp = tempfile.NamedTemporaryFile()
     temp.write(bytes(text, 'UTF-8'))
